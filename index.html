@@ -3,84 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Food Recipes</title>
+  <title>Simple Food Recipes</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <div class="container">
-      <h1>🍽️ Food Recipes</h1>
+      <h1>Simple Food</h1>
       <nav>
         <a href="#">Home</a>
-        <a href="#">Indian</a>
-        <a href="#">Italian</a>
-        <a href="#">American</a>
+        <a href="#">Sweet Things</a>
+        <a href="#">Savoury Things</a>
+        <a href="#">All Recipes</a>
         <a href="#">About</a>
       </nav>
-      <div class="controls">
-        <input type="text" id="searchBar" placeholder="Search food...">
-        <select id="cuisineSelector">
-          <option value="all">All Cuisines</option>
-          <option value="indian">Indian</option>
-          <option value="italian">Italian</option>
-          <option value="american">American</option>
-          <option value="chinese">Chinese</option>
-          <option value="mexican">Mexican</option>
-        </select>
-      </div>
     </div>
   </header>
 
-  <main class="container" id="recipeList">
-    <!-- Food Cards -->
-    <div class="card" data-name="biryani" data-cuisine="indian">
-      <h2>Biryani</h2>
-      <a href="recipes/biryani.html">View Recipe</a>
-    </div>
-    <div class="card" data-name="dosa" data-cuisine="indian">
-      <h2>Dosa</h2>
-      <a href="recipes/dosa.html">View Recipe</a>
-    </div>
-    <div class="card" data-name="paneer butter masala" data-cuisine="indian">
-      <h2>Paneer Butter Masala</h2>
-      <a href="recipes/paneer-butter-masala.html">View Recipe</a>
-    </div>
-    <div class="card" data-name="chole" data-cuisine="indian">
-      <h2>Chole</h2>
-      <a href="recipes/chole.html">View Recipe</a>
-    </div>
-    <div class="card" data-name="rajma" data-cuisine="indian">
-      <h2>Rajma</h2>
-      <a href="recipes/rajma.html">View Recipe</a>
-    </div>
-    <div class="card" data-name="pav bhaji" data-cuisine="indian">
-      <h2>Pav Bhaji</h2>
-      <a href="recipes/pav-bhaji.html">View Recipe</a>
-    </div>
-    <div class="card" data-name="poha" data-cuisine="indian">
-      <h2>Poha</h2>
-      <a href="recipes/poha.html">View Recipe</a>
-    </div>
-    <div class="card" data-name="butter chicken" data-cuisine="indian">
-      <h2>Butter Chicken</h2>
-      <a href="recipes/butter-chicken.html">View Recipe</a>
-    </div>
-    <div class="card" data-name="aloo paratha" data-cuisine="indian">
-      <h2>Aloo Paratha</h2>
-      <a href="recipes/aloo-paratha.html">View Recipe</a>
-    </div>
-    <div class="card" data-name="samosa" data-cuisine="indian">
-      <h2>Samosa</h2>
-      <a href="recipes/samosa.html">View Recipe</a>
-    </div>
+  <main class="container">
+    <section class="recipe-grid">
+      <div class="recipe-card">
+        <img src="images/biryani.jpg" alt="Biryani">
+        <h2>Biryani</h2>
+      </div>
+      <div class="recipe-card">
+        <img src="images/pav-bhaji.jpg" alt="Pav Bhaji">
+        <h2>Pav Bhaji</h2>
+      </div>
+      <div class="recipe-card">
+        <img src="images/samosa.jpg" alt="Samosa">
+        <h2>Samosa</h2>
+      </div>
+      <!-- Add more recipes here -->
+    </section>
   </main>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Food Recipes. All rights reserved.</p>
-    </div>
+    <p>&copy; 2025 Simple Food. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
